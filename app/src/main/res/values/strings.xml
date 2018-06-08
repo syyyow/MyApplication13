@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Aftec</string>
     <string name="title_product">Product</string>
     <string name="title_cart">Cart</string>
     <string name="title_delivery_status">Delivery_status</string>
