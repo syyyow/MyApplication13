@@ -17,11 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            //Fragment selectedFragment = null;
             switch (item.getItemId()) {
                 case R.id.navigation_product:
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                    transaction.replace(R.id.container, cartFragment.newInstance());
+                    transaction.replace(R.id.container,MainFragment.newInstance());
                     transaction.commit();
                     return true;
                 case R.id.navigation_cart:
@@ -44,4 +43,5 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
+
 }
